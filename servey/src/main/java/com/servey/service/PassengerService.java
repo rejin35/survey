@@ -10,26 +10,26 @@ import com.servey.repository.PassengerRepository;
 
 
 @Service
-public class Passengerservice {
+public class PassengerService {
 	
 	@Autowired
-	PassengerRepository passengerRepository;
-	public Passenger addpassenger(Passenger passenger) {
+	private PassengerRepository passengerRepository;
+	public Passenger addPassenger(Passenger passenger) {
 		passengerRepository.save(passenger);
 		return passenger;
 	}
 
-	public Passenger updatepassenger(Passenger passenger) {
+	public Passenger updatePassenger(Passenger passenger) {
 		passengerRepository.save(passenger);
 		return passenger;
 	
 	}
-	public Optional<Passenger> getpassengerbyid(Integer passenger_id){
+	public Optional<Passenger> getPassengerById(Integer passenger_id){
 		Optional<Passenger>getid=passengerRepository.findById(passenger_id);
 		return getid;
 		
 	}
-	public Passenger deletepassenger(Passenger passenger) {
+	public Passenger deletePassenger(Passenger passenger) {
 		passengerRepository.delete(passenger);
 		return passenger;
 	}

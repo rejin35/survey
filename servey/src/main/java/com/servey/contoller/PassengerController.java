@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.servey.model.Passenger;
-import com.servey.service.Passengerservice;
+import com.servey.service.PassengerService;
 
 
 @RestController
@@ -23,28 +23,28 @@ import com.servey.service.Passengerservice;
 public class PassengerController {
 	
 	@Autowired
-	Passengerservice passengerservice;
+	private PassengerService passengerService;
 
 	@PostMapping("/addpassenger")
 	Passenger addpassenger (@RequestBody Passenger passenger ) {
-		passengerservice.addpassenger(passenger);
+		passengerService.addPassenger(passenger);
 		return passenger;	
 	}
 	@PutMapping("/updatepassenger")
 	Passenger updatepassenger (@RequestBody Passenger passenger ) {
-		passengerservice.updatepassenger(passenger);
+		passengerService.updatePassenger(passenger);
 		return passenger;
 		
 	}
 	@GetMapping("/getbyid")
 	Optional<Passenger> getpassengerbyid (@RequestParam Integer passenger_id) {
-		Optional<Passenger>getid=passengerservice.getpassengerbyid(passenger_id);
+		Optional<Passenger>getid=passengerService.getPassengerById(passenger_id);
 		return getid;
 		
 	}
 	@DeleteMapping("/deletepassenger")
 	Passenger deletepassenger (@RequestBody Passenger Passenger) {
-		passengerservice.deletepassenger(Passenger);
+		passengerService.deletePassenger(Passenger);
 		return Passenger;
 		
 	}
