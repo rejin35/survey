@@ -14,7 +14,7 @@ public class PassengerService {
 	
 	@Autowired
 	private PassengerRepository passengerRepository;
-	public Passenger addPassenger(Passenger passenger) {
+	public Passenger addPassenger(Passenger passenger) {		
 		passengerRepository.save(passenger);
 		return passenger;
 	}
@@ -26,6 +26,7 @@ public class PassengerService {
 	}
 	public Optional<Passenger> getPassengerById(Integer passenger_id){
 		Optional<Passenger>getid=passengerRepository.findById(passenger_id);
+		getid.get().setPassengerLastname("Indian");
 		return getid;
 		
 	}

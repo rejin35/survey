@@ -19,6 +19,7 @@ public class Passenger {
 	private String country;
 	private Long phoneNo;
 	private String email;
+	
 	public Integer getPassengerId() {
 		return passengerId;
 	}
