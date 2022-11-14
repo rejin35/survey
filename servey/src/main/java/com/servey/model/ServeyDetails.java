@@ -14,22 +14,22 @@ public class ServeyDetails {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Integer servey_id;
-	Integer passenger_id;
+	Integer serveyId;
+	Integer passengerId;
 	Date date;
 	String feedback;
 	String rating;
-	public Integer getServey_id() {
-		return servey_id;
+	public Integer getServeyId() {
+		return serveyId;
 	}
-	public void setServey_id(Integer servey_id) {
-		this.servey_id = servey_id;
+	public void setServey_id(Integer serveyId) {
+		this.serveyId = serveyId;
 	}
-	public Integer getPassenger_id() {
-		return passenger_id;
+	public Integer getPassengerId() {
+		return passengerId;
 	}
-	public void setPassenger_id(Integer passenger_id) {
-		this.passenger_id = passenger_id;
+	public void setPassenger_id(Integer passengerId) {
+		this.passengerId = passengerId;
 	}
 	public Date getDate() {
 		return date;

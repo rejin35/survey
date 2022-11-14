@@ -14,55 +14,54 @@ public class TravelDetail {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Integer travel_id;
-	Integer passenger_id;
-	String from_place;
-	String to_place;
-	String airline_name;
-	Date date_of_travel;
+	Integer travelId;
+	Integer passengerId;
+	String fromPlace;
+	String toPlace;
+	String airlineName;
+	Date dateOfTravel;
 	String departure_time;
-	public Integer getTravel_id() {
-		return travel_id;
+	public Integer getTravelId() {
+		return travelId;
 	}
-	public void setTravel_id(Integer travel_id) {
-		this.travel_id = travel_id;
+	public void setTravelId(Integer travelId) {
+		this.travelId = travelId;
 	}
-	public Integer getPassenger_id() {
-		return passenger_id;
+	public Integer getPassengerId() {
+		return passengerId;
 	}
-	public void setPassenger_id(Integer passenger_id) {
-		this.passenger_id = passenger_id;
+	public void setPassengerId(Integer passengerId) {
+		this.passengerId = passengerId;
 	}
-	
-	public String getAirline_name() {
-		return airline_name;
+	public String getFromPlace() {
+		return fromPlace;
 	}
-	public void setAirline_name(String airline_name) {
-		this.airline_name = airline_name;
+	public void setFromPlace(String fromPlace) {
+		this.fromPlace = fromPlace;
 	}
-	public Date getDate_of_travel() {
-		return date_of_travel;
+	public String getToPlace() {
+		return toPlace;
 	}
-	public void setDate_of_travel(Date date_of_travel) {
-		this.date_of_travel = date_of_travel;
+	public void setToPlace(String toPlace) {
+		this.toPlace = toPlace;
+	}
+	public String getAirlineName() {
+		return airlineName;
+	}
+	public void setAirlineName(String airlineName) {
+		this.airlineName = airlineName;
+	}
+	public Date getDateOfTravel() {
+		return dateOfTravel;
+	}
+	public void setDateOfTravel(Date dateOfTravel) {
+		this.dateOfTravel = dateOfTravel;
 	}
 	public String getDeparture_time() {
 		return departure_time;
 	}
 	public void setDeparture_time(String departure_time) {
 		this.departure_time = departure_time;
-	}
-	public String getFrom_place() {
-		return from_place;
-	}
-	public void setFrom_place(String from_place) {
-		this.from_place = from_place;
-	}
-	public String getTo_place() {
-		return to_place;
-	}
-	public void setTo_place(String to_place) {
-		this.to_place = to_place;
 	}
 	
 }

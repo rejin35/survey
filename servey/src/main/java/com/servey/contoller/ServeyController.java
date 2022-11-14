@@ -31,18 +31,18 @@ public class ServeyController {
 	}
 	
 	@PutMapping("/updateserveydetails")
-	public ServeyDetails updatedetails(@RequestBody ServeyDetails serveyDetails) {
+	public ServeyDetails updateDetails(@RequestBody ServeyDetails serveyDetails) {
 		serveyDetailsService.update(serveyDetails);
 		return serveyDetails;
 	}
 	@GetMapping("/getdetailsbyid")
-	public Optional<ServeyDetails> getdetailsbyid(@RequestParam Integer passenger_id ) {
+	public Optional<ServeyDetails> getDetailsById(@RequestParam Integer passenger_id ) {
 		Optional<ServeyDetails>getid=serveyDetailsService.getdetailsbyid(passenger_id);
 		
 		return getid;		
 	}
 	@DeleteMapping("/deletedetailsbyid")
-	public ServeyDetails deletedetailsbyid(@RequestBody ServeyDetails serveyDetails) {
+	public ServeyDetails deleteDetailsById(@RequestBody ServeyDetails serveyDetails) {
 		serveyDetailsService.deletedetailsbyid(serveyDetails);
 		return serveyDetails;		
 	}
