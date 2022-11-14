@@ -14,11 +14,11 @@ public class ServeyDetails {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Integer serveyId;
-	Integer passengerId;
-	Date date;
-	String feedback;
-	String rating;
+	private Integer serveyId;
+	private Integer passengerId;
+	private Date date;
+	private String feedback;
+	private String rating;
 	public Integer getServeyId() {
 		return serveyId;
 	}

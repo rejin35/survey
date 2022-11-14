@@ -14,13 +14,13 @@ public class TravelDetail {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Integer travelId;
-	Integer passengerId;
-	String fromPlace;
-	String toPlace;
-	String airlineName;
-	Date dateOfTravel;
-	String departure_time;
+	private Integer travelId;
+	private Integer passengerId;
+	private String fromPlace;
+	private String toPlace;
+	private String airlineName;
+	private Date dateOfTravel;
+	private String departure_time;
 	public Integer getTravelId() {
 		return travelId;
 	}
